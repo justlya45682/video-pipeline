@@ -59,10 +59,13 @@ if (!noAudio) {
   wavPath = path.join(ROOT, 'out', 'music_tmp.wav'); fs.mkdirSync(path.dirname(wavPath), { recursive: true }); fs.writeFileSync(wavPath, buf);
 }
 
+const narrPath = opt('--narration', null);
 const ff = ['-y', '-f', 'image2pipe', '-framerate', String(fps), '-c:v', 'mjpeg', '-i', '-'];
 if (wavPath) ff.push('-ss', String(from / fps), '-i', wavPath);
+if (wavPath && narrPath) ff.push('-ss', String(from / fps), '-i', narrPath);
 ff.push('-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '18', '-preset', 'medium', '-r', String(fps));
-if (wavPath) ff.push('-c:a', 'aac', '-b:a', '192k', '-shortest');
+if (wavPath && narrPath) ff.push('-filter_complex', '[1:a]volume=0.32[m];[2:a]volume=1.25[n];[m][n]amix=inputs=2:duration=first:normalize=0[a]', '-map', '0:v', '-map', '[a]', '-c:a', 'aac', '-b:a', '192k', '-shortest');
+else if (wavPath) ff.push('-c:a', 'aac', '-b:a', '192k', '-shortest');
 ff.push('-movflags', '+faststart', outPath);
 const enc = spawn(ffmpegPath, ff, { stdio: ['pipe', 'inherit', 'inherit'] });
 
