@@ -31,14 +31,15 @@ def synthesize(text: str, style: str, output_path: str) -> str:
 
 
 if __name__ == "__main__":
+    out = Path(__file__).resolve().parent.parent / "output"
     synthesize(
         "Pourquoi le ciel est-il bleu ? C'est une excellente question !",
         "kids",
-        "C:/histoire/video-pipeline/output/test_kids.mp3",
+        str(out / "test_kids.mp3"),
     )
     synthesize(
         "Quelque chose respire derriere toi... N'te retourne pas.",
         "horror",
-        "C:/histoire/video-pipeline/output/test_horror.mp3",
+        str(out / "test_horror.mp3"),
     )
     print("OK - audios de test generes")

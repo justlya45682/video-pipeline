@@ -87,8 +87,9 @@ def build_video(scene_assets: list[dict], output_path: str, tmp_dir: str, max_se
 
 
 if __name__ == "__main__":
+    out = Path(__file__).resolve().parent.parent / "output"
     scenes = [
-        {"image": "C:/histoire/video-pipeline/output/test_kids.jpg", "audio": "C:/histoire/video-pipeline/output/test_kids.mp3"},
+        {"image": str(out / "test_kids.jpg"), "audio": str(out / "test_kids.mp3")},
     ]
-    dur = build_video(scenes, "C:/histoire/video-pipeline/output/test_kids_video.mp4", "C:/histoire/video-pipeline/output/tmp")
+    dur = build_video(scenes, str(out / "test_kids_video.mp4"), str(out / "tmp"))
     print(f"OK - video de test generee ({dur:.1f}s)")

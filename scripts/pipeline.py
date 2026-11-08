@@ -8,7 +8,7 @@ from slides import make_slide
 from tts import synthesize
 from assemble import build_video
 
-OUTPUT_DIR = Path("C:/histoire/video-pipeline/output")
+OUTPUT_DIR = Path(__file__).resolve().parent.parent / "output"
 MAX_DURATION = 180.0  # 3 minutes
 
 

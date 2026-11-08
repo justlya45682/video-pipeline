@@ -4,7 +4,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 WIDTH, HEIGHT = 1920, 1080
-FONTS_DIR = Path("C:/Windows/Fonts")
+FONTS_DIR = Path(__file__).resolve().parent.parent / "assets" / "fonts"
 
 STYLES = {
     "kids": {
@@ -12,7 +12,7 @@ STYLES = {
         "gradient_bottom": (86, 196, 255),
         "text_color": (30, 30, 60),
         "outline_color": (255, 255, 255),
-        "font_file": "comicbd.ttf",
+        "font_file": "Baloo2-Variable.ttf",
         "font_size": 68,
         "box_color": (255, 255, 255, 160),
         "vignette": False,
@@ -22,8 +22,8 @@ STYLES = {
         "gradient_bottom": (40, 5, 10),
         "text_color": (220, 215, 200),
         "outline_color": (0, 0, 0),
-        "font_file": "CHILLER.TTF",
-        "font_size": 90,
+        "font_file": "Creepster-Regular.ttf",
+        "font_size": 80,
         "box_color": (0, 0, 0, 120),
         "vignette": True,
     },
@@ -110,6 +110,7 @@ def make_slide(text: str, style: str, output_path: str, scene_index: int = 0) ->
 
 
 if __name__ == "__main__":
-    make_slide("Pourquoi le ciel est-il bleu ?", "kids", "C:/histoire/video-pipeline/output/test_kids.jpg")
-    make_slide("Quelque chose respire derriere toi...", "horror", "C:/histoire/video-pipeline/output/test_horror.jpg")
+    out = Path(__file__).resolve().parent.parent / "output"
+    make_slide("Pourquoi le ciel est-il bleu ?", "kids", str(out / "test_kids.jpg"))
+    make_slide("Quelque chose respire derriere toi...", "horror", str(out / "test_horror.jpg"))
     print("OK - slides de test generees")
