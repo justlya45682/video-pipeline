@@ -26,7 +26,21 @@ const server = http.createServer((req, res) => {
 }).listen(0);
 const port = server.address().port;
 
-const browser = await chromium.launch({ args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist', '--enable-webgl'] });
+// Dans le cloud, cdn.playwright.dev est bloque: on utilise le Chromium deja installe (/opt/pw-browsers).
+function findInstalledChrome() {
+  const base = process.env.PW_BROWSERS_DIR || '/opt/pw-browsers';
+  if (!fs.existsSync(base)) return undefined;
+  for (const d of fs.readdirSync(base).sort().reverse()) {
+    for (const rel of ['chrome-linux/chrome', 'chrome-linux64/chrome', 'chrome-linux/headless_shell']) {
+      const p = path.join(base, d, rel);
+      if (fs.existsSync(p)) return p;
+    }
+  }
+  return undefined;
+}
+let executablePath;
+try { if (!fs.existsSync(chromium.executablePath())) executablePath = findInstalledChrome(); } catch { executablePath = findInstalledChrome(); }
+const browser = await chromium.launch({ executablePath, args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist', '--enable-webgl', '--no-sandbox'] });
 const page = await browser.newPage({ viewport: { width: 1080, height: 1920 }, deviceScaleFactor: 1 });
 page.on('pageerror', e => console.error('PAGEERROR', e.message));
 page.on('console', m => { if (m.type() === 'error') console.error('CONSOLE', m.text()); });
