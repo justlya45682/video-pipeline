@@ -1,0 +1,53 @@
+{
+  "title": "Test moteur 3D",
+  "fps": 30,
+  "duration": 60,
+  "card": "Et si la porte s'ouvrait encore ?",
+  "cardDuration": 6,
+  "seed": 11,
+  "music": { "mood": "adventure", "root": 73.42, "wind": 0.04 },
+  "character": {},
+  "sfx": [
+    { "t": 0.2, "type": "whoosh" },
+    { "t": 33, "type": "chime" },
+    { "t": 47.5, "type": "hit" }
+  ],
+  "scenes": [
+    {
+      "start": 0, "end": 12, "set": "beach", "anim": "walk",
+      "caption": "Une île inconnue...",
+      "path": [[0, 0, 0], [12, 0, -22]],
+      "cam": { "pos": [[0, 1.5, 2.2, 7], [12, 1.5, 2.4, -15]], "look": [[0, 0, 1.6, -6], [12, 0, 1.6, -30]], "fov": [[0, 55], [12, 46]] },
+      "light": { "sun": 2.6, "hemi": 0.9, "sky": "#9fd8f2", "fog": [30, 140] }
+    },
+    {
+      "start": 12, "end": 24, "set": "forest", "anim": "walk",
+      "caption": "La jungle est silencieuse",
+      "path": [[12, 0, 0], [24, 0, -28]],
+      "cam": { "pos": [[12, 2, 2.4, 6], [24, -1.5, 2.2, -22]], "look": [[12, 0, 1.5, -8], [24, 0, 1.6, -34]] },
+      "light": { "sun": 0.35, "hemi": 0.35, "sky": "#0d1f1a", "fogColor": "#102a22", "fog": [6, 48], "accent": { "color": "#7fffb0", "intensity": 8, "pos": [0, 3, -5] } }
+    },
+    {
+      "start": 24, "end": 36, "set": "cave", "anim": "walk",
+      "caption": "Un cristal brille dans le noir",
+      "path": [[24, 0, 0], [36, 0, -16]],
+      "cam": { "pos": [[24, 2.4, 3.5, 7], [36, 2.8, 2.4, -9]], "look": [[24, 0, 2, -12], [36, 0, 2, -22]] },
+      "light": { "sun": 0.05, "hemi": 0.18, "sky": "#050608", "fog": [8, 55], "accent": { "color": "#55b8ff", "intensity": 70, "pos": [0, 4, -20] } }
+    },
+    {
+      "start": 36, "end": 46, "set": "house", "anim": "walk",
+      "caption": "Un couloir sans fin",
+      "path": [[36, 0, 0], [46, 0, -14]],
+      "cam": { "pos": [[36, 1.6, 2.4, 6], [46, 1.2, 2.2, -8]], "look": [[36, 0, 1.6, -10], [46, 0, 1.6, -26]] },
+      "light": { "sun": 0.05, "hemi": 0.25, "sky": "#0a0705", "fog": [4, 34], "accent": { "color": "#ffb060", "intensity": 25, "pos": [0, 5, -10] } }
+    },
+    {
+      "start": 46, "end": 60, "set": "house", "anim": "scared", "faceCamera": true,
+      "caption": "Quelqu'un est derrière elle...",
+      "path": [[46, 0, -14]],
+      "shadow": [[46, 0, -34, 1.6], [53, 0, -18, 1.6]],
+      "cam": { "pos": [[46, 0.5, 1.7, -7], [54, 0, 1.6, -9.5]], "look": [[46, 0, 1.6, -14], [54, 0, 1.7, -14]], "shake": [[46, 0], [47.5, 0.05], [54, 0.06]] },
+      "light": { "sun": 0.02, "hemi": 0.08, "sky": "#0a0204", "fog": [3, 26], "accent": { "color": "#ff2a1a", "intensity": 55, "pos": [0, 4, -20] } }
+    }
+  ]
+}

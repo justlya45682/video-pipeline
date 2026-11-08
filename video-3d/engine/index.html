@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<style>
+  html,body{margin:0;background:#000;overflow:hidden}
+  #stage{position:relative;width:1080px;height:1920px;background:#000}
+  canvas{display:block;width:1080px;height:1920px}
+  #cap{position:absolute;left:60px;right:60px;bottom:330px;text-align:center;
+       font:800 74px/1.15 "Segoe UI",Arial,sans-serif;color:#fff;
+       text-shadow:0 4px 0 #000,0 0 18px rgba(0,0,0,.9),4px 0 0 #000,-4px 0 0 #000;
+       opacity:0;letter-spacing:.5px}
+  #fade{position:absolute;inset:0;background:#000;opacity:0;pointer-events:none}
+  #card{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+        text-align:center;padding:0 90px;color:#f3ead2;opacity:0;
+        font:700 84px/1.25 Georgia,serif;text-shadow:0 0 28px rgba(255,230,160,.55)}
+</style>
+</head>
+<body>
+<div id="stage"><div id="cap"></div><div id="fade"></div><div id="card"></div></div>
+<script type="module" src="./engine.js"></script>
+</body>
+</html>
