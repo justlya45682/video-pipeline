@@ -9,3 +9,6 @@ secrets/
 client_secret.json
 gh_out.txt
 gh_err.txt
+
+yt_auth_out.txt
+yt_auth_err.txt
