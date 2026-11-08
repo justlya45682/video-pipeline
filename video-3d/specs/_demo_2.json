@@ -1,0 +1,1 @@
+{"title":"demo","fps":30,"duration":6,"seed":3,"voice":"kids","character":{"kind":"robot","jacket":"#c0c8d8","skin":"#aab4c4","scarf":"#ff8a30"},"scenes":[{"start":0,"end":6,"set":"desert","light":"golden","anim":"walk","cam":{"mode":"side"},"weather":"dust","props":[{"type":"rocket","at":[-6,-14]}],"path":[[0,0,0],[6,0,-8]],"caption":"desert / robot / side"}]}

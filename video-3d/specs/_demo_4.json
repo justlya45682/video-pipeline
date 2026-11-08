@@ -1,0 +1,1 @@
+{"title":"demo","fps":30,"duration":6,"seed":3,"voice":"kids","character":{"kind":"human","jacket":"#6a3ad0","hat":"wizard","hatColor":"#3a2a8a"},"scenes":[{"start":0,"end":6,"set":"street","light":"night","anim":"walk","cam":{"mode":"low"},"weather":"rain","props":[{"type":"lamp","at":[2,-6]}],"path":[[0,0,0],[6,0,-8]],"caption":"street / human / low"}]}

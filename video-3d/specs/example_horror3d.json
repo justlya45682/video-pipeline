@@ -1,0 +1,216 @@
+{
+  "title": "Le placard de Léa #Shorts",
+  "fps": 30,
+  "duration": 52,
+  "seed": 33,
+  "voice": "horror",
+  "music": {
+    "mood": "horror",
+    "root": 55,
+    "wind": 0.05
+  },
+  "character": {
+    "kind": "human",
+    "kid": true,
+    "jacket": "#7ac8ff",
+    "pants": "#2a4a8a",
+    "boots": "#222222",
+    "hair": "#5a3a1e",
+    "skin": "#f0c09a",
+    "pack": null,
+    "scarf": null,
+    "ponytail": true
+  },
+  "card": "Ferme bien ton placard ce soir...",
+  "cardDuration": 4,
+  "sfx": [
+    {
+      "t": 14,
+      "type": "creak"
+    },
+    {
+      "t": 27,
+      "type": "creak"
+    },
+    {
+      "t": 37.5,
+      "type": "hit"
+    },
+    {
+      "t": 44,
+      "type": "hit"
+    }
+  ],
+  "scenes": [
+    {
+      "start": 0,
+      "end": 9,
+      "set": "bedroom",
+      "light": "night",
+      "anim": "walk",
+      "cam": "follow",
+      "path": [
+        [
+          0,
+          -1,
+          -4
+        ],
+        [
+          9,
+          -1,
+          -15
+        ]
+      ],
+      "narration": "Léa a huit ans. Chaque soir, avant de dormir, elle vérifie que son placard est bien fermé.",
+      "caption": "Léa, 8 ans"
+    },
+    {
+      "start": 9,
+      "end": 18,
+      "set": "bedroom",
+      "light": "creepy",
+      "anim": "look",
+      "cam": "closeup",
+      "path": [
+        [
+          9,
+          0,
+          -14
+        ]
+      ],
+      "narration": "Mais ce soir, elle entend un petit grincement. La porte du placard bouge toute seule.",
+      "caption": "Un grincement..."
+    },
+    {
+      "start": 18,
+      "end": 28,
+      "set": "bedroom",
+      "light": "creepy",
+      "anim": "walk",
+      "cam": "low",
+      "doorOpen": [
+        [
+          18,
+          0
+        ],
+        [
+          27,
+          0.6
+        ]
+      ],
+      "path": [
+        [
+          18,
+          0,
+          -14
+        ],
+        [
+          28,
+          2.2,
+          -17
+        ]
+      ],
+      "narration": "Elle s'approche à petits pas. Son cœur bat très fort. La porte s'entrouvre, juste un peu.",
+      "caption": "Elle s'approche"
+    },
+    {
+      "start": 28,
+      "end": 38,
+      "set": "bedroom",
+      "light": "blood",
+      "anim": "scared",
+      "cam": {
+        "mode": "closeup"
+      },
+      "faceCamera": true,
+      "doorOpen": [
+        [
+          28,
+          0.6
+        ],
+        [
+          36,
+          1
+        ]
+      ],
+      "path": [
+        [
+          28,
+          2.2,
+          -17
+        ]
+      ],
+      "cam2": null,
+      "narration": "Dans le noir, deux yeux rouges la regardent. Elle veut crier, mais aucun son ne sort.",
+      "caption": "Deux yeux rouges"
+    },
+    {
+      "start": 38,
+      "end": 46,
+      "set": "bedroom",
+      "light": "blood",
+      "anim": "run",
+      "cam": "side",
+      "shadow": [
+        [
+          38,
+          3.8,
+          -19,
+          1.5
+        ],
+        [
+          46,
+          -1,
+          -8,
+          1.5
+        ]
+      ],
+      "path": [
+        [
+          38,
+          2.2,
+          -17
+        ],
+        [
+          46,
+          -2,
+          -5
+        ]
+      ],
+      "narration": "Elle court vers la porte de sa chambre. Derrière elle, une ombre se met à la suivre.",
+      "caption": "Elle court !"
+    },
+    {
+      "start": 46,
+      "end": 52,
+      "set": "bedroom",
+      "light": "blood",
+      "anim": "scared",
+      "cam": "dolly_in",
+      "faceCamera": true,
+      "shadow": [
+        [
+          46,
+          0,
+          -14,
+          1.8
+        ],
+        [
+          50,
+          0,
+          -9,
+          1.8
+        ]
+      ],
+      "path": [
+        [
+          46,
+          0,
+          -5
+        ]
+      ],
+      "narration": "Et si l'ombre était déjà dans ta chambre ?",
+      "caption": "Derrière toi..."
+    }
+  ]
+}

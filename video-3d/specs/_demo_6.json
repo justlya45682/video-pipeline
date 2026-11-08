@@ -1,0 +1,1 @@
+{"title":"demo","fps":30,"duration":6,"seed":3,"voice":"kids","character":{"kind":"human","kid":true,"jacket":"#7ac8ff","pants":"#2a4a8a","pack":null,"scarf":null},"scenes":[{"start":0,"end":6,"set":"bedroom","light":"creepy","anim":"scared","cam":{"mode":"closeup"},"weather":"dust","props":[],"path":[[0,0,0],[6,0,-8]],"caption":"bedroom / human / closeup"}]}

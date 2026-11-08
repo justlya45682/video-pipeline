@@ -5,7 +5,8 @@ import path from 'node:path';
 import { spawn } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { chromium } from 'playwright';
-import ffmpegPath from 'ffmpeg-static';
+import ffmpegStatic from "ffmpeg-static";
+const ffmpegPath = (ffmpegStatic && fs.existsSync(ffmpegStatic)) ? ffmpegStatic : "ffmpeg";
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const args = process.argv.slice(2);
@@ -47,6 +48,18 @@ page.on('console', m => { if (m.type() === 'error') console.error('CONSOLE', m.t
 await page.goto(`http://localhost:${port}/engine/index.html`);
 await page.waitForFunction('window.__ready === true', null, { timeout: 60000 });
 await page.evaluate((s) => window.loadSpec(s), spec);
+
+// apercu: node render.mjs spec.json prefix --frames 3,15,27  -> out/prefix_<t>.png (aucune video)
+const framesOpt = opt('--frames', null);
+if (framesOpt) {
+  fs.mkdirSync(path.join(ROOT, 'out'), { recursive: true });
+  for (const sec of framesOpt.split(',').map(Number)) {
+    await page.evaluate((k) => window.renderFrame(k), Math.round(sec * fps));
+    await page.screenshot({ path: path.join(ROOT, 'out', `${path.basename(outPath, '.mp4')}_${sec}.png`) });
+    console.log('frame', sec);
+  }
+  await browser.close(); server.close(); process.exit(0);
+}
 
 // audio
 let wavPath = null;

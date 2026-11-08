@@ -1,0 +1,248 @@
+{
+  "title": "Pourquoi les feuilles tombent en automne ? #Shorts",
+  "fps": 30,
+  "duration": 48,
+  "seed": 21,
+  "voice": "kids",
+  "music": {
+    "mood": "happy",
+    "root": 98
+  },
+  "character": {
+    "kind": "human",
+    "kid": true,
+    "jacket": "#e8742a",
+    "pants": "#3a5aa0",
+    "boots": "#5a3a1e",
+    "hair": "#d9731a",
+    "skin": "#f0c09a",
+    "pack": null,
+    "scarf": "#ffd23f",
+    "ponytail": false,
+    "ears": "fox",
+    "tail": true,
+    "tailColor": "#d9731a",
+    "earColor": "#d9731a"
+  },
+  "companion": {
+    "kind": "robot",
+    "jacket": "#9fb6d8",
+    "skin": "#c8d4e8",
+    "scarf": "#ff4a8a",
+    "scale": 0.7,
+    "offset": [
+      1.4,
+      1.2
+    ]
+  },
+  "sfx": [
+    {
+      "t": 0.3,
+      "type": "whoosh"
+    },
+    {
+      "t": 16,
+      "type": "pop"
+    },
+    {
+      "t": 30,
+      "type": "chime"
+    }
+  ],
+  "scenes": [
+    {
+      "start": 0,
+      "end": 8,
+      "set": "meadow",
+      "light": "golden",
+      "anim": "wave",
+      "faceCamera": true,
+      "cam": {
+        "mode": "front",
+        "dist": 5,
+        "height": 1.8
+      },
+      "path": [
+        [
+          0,
+          0,
+          -4
+        ]
+      ],
+      "props": [
+        {
+          "type": "tree",
+          "at": [
+            -6,
+            -10
+          ],
+          "kind": "round",
+          "color": "#ff9a3c"
+        },
+        {
+          "type": "tree",
+          "at": [
+            7,
+            -12
+          ],
+          "kind": "round",
+          "color": "#e8642a"
+        }
+      ],
+      "narration": "Salut les amis ! Aujourd'hui, Roby et moi, on découvre pourquoi les feuilles tombent en automne.",
+      "caption": "Pourquoi les feuilles tombent ?"
+    },
+    {
+      "start": 8,
+      "end": 16,
+      "set": "meadow",
+      "setParams": {
+        "leaf": "#ff9a3c",
+        "ground": "#8fb84a"
+      },
+      "light": "golden",
+      "anim": "walk",
+      "cam": "follow",
+      "weather": "dust",
+      "path": [
+        [
+          8,
+          0,
+          0
+        ],
+        [
+          16,
+          0,
+          -16
+        ]
+      ],
+      "narration": "En été, les feuilles sont vertes et pleines de vie. Elles fabriquent de la nourriture avec la lumière du soleil.",
+      "caption": "En été : feuilles vertes"
+    },
+    {
+      "start": 16,
+      "end": 24,
+      "set": "forest",
+      "setParams": {
+        "kind": "round",
+        "leaf": "#ff8a30",
+        "ground": "#7a5a2a"
+      },
+      "light": "golden",
+      "anim": "point",
+      "cam": "side",
+      "weather": "fireflies",
+      "path": [
+        [
+          16,
+          0,
+          -6
+        ]
+      ],
+      "props": [
+        {
+          "type": "mushroom",
+          "at": [
+            2,
+            -5
+          ],
+          "color": "#d0392b"
+        },
+        {
+          "type": "flower",
+          "at": [
+            -2,
+            -4
+          ],
+          "color": "#ffd23f"
+        }
+      ],
+      "narration": "Mais en automne, il fait plus froid et le soleil brille moins longtemps. L'arbre se prépare à se reposer.",
+      "caption": "L'arbre se repose"
+    },
+    {
+      "start": 24,
+      "end": 32,
+      "set": "forest",
+      "setParams": {
+        "kind": "round",
+        "leaf": "#e8642a",
+        "ground": "#8a5a2a"
+      },
+      "light": "dusk",
+      "anim": "look",
+      "cam": "orbit",
+      "weather": "embers",
+      "path": [
+        [
+          24,
+          0,
+          -8
+        ]
+      ],
+      "narration": "Alors, les feuilles perdent leur couleur verte et deviennent jaunes, orange et rouges. Quelle belle magie !",
+      "caption": "Jaune, orange, rouge !"
+    },
+    {
+      "start": 32,
+      "end": 40,
+      "set": "meadow",
+      "setParams": {
+        "leaf": "#d9531a",
+        "ground": "#9aa84a"
+      },
+      "light": "golden",
+      "anim": "jump",
+      "cam": "closeup",
+      "weather": "dust",
+      "path": [
+        [
+          32,
+          0,
+          -6
+        ]
+      ],
+      "props": [
+        {
+          "type": "balloon",
+          "at": [
+            -3,
+            -6
+          ],
+          "color": "#ffd23f",
+          "bob": true
+        }
+      ],
+      "narration": "Puis, quand le vent souffle, les feuilles se détachent et tombent doucement sur le sol.",
+      "caption": "Elles tombent doucement"
+    },
+    {
+      "start": 40,
+      "end": 48,
+      "set": "meadow",
+      "light": "golden",
+      "anim": "dance",
+      "faceCamera": true,
+      "cam": "dolly_in",
+      "path": [
+        [
+          40,
+          0,
+          -6
+        ]
+      ],
+      "props": [
+        {
+          "type": "star",
+          "at": [
+            3,
+            -5
+          ],
+          "bob": true
+        }
+      ],
+      "narration": "Au printemps, de nouvelles feuilles vont repousser. Abonne-toi pour découvrir d'autres secrets de la nature !",
+      "caption": "Abonne-toi !"
+    }
+  ]
+}

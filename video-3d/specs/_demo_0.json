@@ -1,0 +1,1 @@
+{"title":"demo","fps":30,"duration":6,"seed":3,"voice":"kids","character":{"kind":"human"},"scenes":[{"start":0,"end":6,"set":"beach","light":"day","anim":"walk","cam":{"type":"follow"},"weather":"rain","props":[{"type":"chest","at":[2,-8]}],"path":[[0,0,0],[6,0,-8]],"caption":"beach / human / [object Object]"}]}
