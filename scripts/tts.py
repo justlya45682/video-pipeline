@@ -1,7 +1,29 @@
 """Generation de la narration audio (voix off) via edge-tts."""
 import asyncio
+import os
+import ssl
 from pathlib import Path
+
+import certifi
 import edge_tts
+import edge_tts.communicate as _edge_comm
+
+
+def _trust_proxy_ca() -> None:
+    """edge-tts n'utilise que le bundle certifi, qui ne contient pas le certificat du proxy
+    des environnements cloud. On construit un contexte SSL qui fait confiance au magasin systeme,
+    au bundle certifi ET aux bundles indiques par les variables d'environnement standard.
+    La verification TLS reste ACTIVE (rien n'est desactive)."""
+    ctx = ssl.create_default_context()
+    for var in ("SSL_CERT_FILE", "REQUESTS_CA_BUNDLE", "CURL_CA_BUNDLE"):
+        path = os.environ.get(var)
+        if path and os.path.isfile(path):
+            ctx.load_verify_locations(cafile=path)
+    ctx.load_verify_locations(cafile=certifi.where())
+    _edge_comm._SSL_CTX = ctx
+
+
+_trust_proxy_ca()
 
 VOICE_CONFIG = {
     "kids": {
