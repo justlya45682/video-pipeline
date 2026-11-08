@@ -1,40 +1,48 @@
 {
   "style": "horror",
   "title": "Ne regarde JAMAIS sous ton lit... (histoire qui fait peur)",
-  "description": "Une petite histoire qui va te donner des frissons avant de dormir. Clara connaissait la regle. Jusqu'a cette nuit-la...\n\nAttention, cette video est destinee a un public averti (frissons et suspense).\n\n#histoiredepeur #creepypasta #frissons #horreur #chairdepoule",
-  "tags": ["histoire qui fait peur", "creepypasta francais", "histoire d'horreur", "frissons", "chair de poule"],
+  "description": "Une petite histoire qui va te donner des frissons avant de dormir. Clara connaissait la regle. Jusqu'a cette nuit-la...\n\nAttention, cette video est destinee a un public averti (frissons et suspense).\n\n#abonnetoi #abonnez #claude #creppy #history #horreur #mystery #histoire #notfunny #abonnezvous #viral #video #titkok #Shorts",
+  "tags": ["abonnetoi", "abonnez", "claude", "creppy", "history", "horreur", "mystery", "histoire", "notfunny", "abonnezvous", "viral", "video", "titkok", "Shorts"],
   "scenes": [
     {
       "narration": "Il etait une fois une regle tres simple, que tout le monde devrait suivre avant de dormir : ne jamais regarder sous son lit.",
-      "slide_text": "Ne regarde jamais sous ton lit..."
+      "slide_text": "Ne regarde jamais sous ton lit...",
+      "scene": "bedroom_dark"
     },
     {
       "narration": "Clara avait toujours respecte cette regle. Jusqu'a cette nuit-la, ou elle entendit un bruit etrange.",
-      "slide_text": "Clara entend un bruit etrange"
+      "slide_text": "Clara entend un bruit etrange",
+      "scene": "listening"
     },
     {
       "narration": "Un grattement lent, juste sous son matelas. Scratch... Scratch...",
-      "slide_text": "Scratch... Scratch..."
+      "slide_text": "Scratch... Scratch...",
+      "scene": "scratches"
     },
     {
       "narration": "Elle se dit que c'etait surement le vent. Mais le vent... ne respire pas.",
-      "slide_text": "Le vent... ne respire pas."
+      "slide_text": "Le vent... ne respire pas.",
+      "scene": "window_wind"
     },
     {
       "narration": "Elle alluma sa lampe de poche, et se pencha, tres lentement, vers le bord du lit.",
-      "slide_text": "Elle se penche vers le bord du lit..."
+      "slide_text": "Elle se penche vers le bord du lit...",
+      "scene": "bending"
     },
     {
       "narration": "Elle ne vit rien. Absolument rien. Et ca... c'est le plus terrifiant.",
-      "slide_text": "Elle ne vit... rien."
+      "slide_text": "Elle ne vit... rien.",
+      "scene": "void"
     },
     {
       "narration": "Car si ce n'etait pas sous le lit... alors ou etait-ce donc ?",
-      "slide_text": "Alors... ou etait-ce ?"
+      "slide_text": "Alors... ou etait-ce ?",
+      "scene": "eyes"
     },
     {
       "narration": "Cette nuit, avant de dormir, souviens-toi bien : ne regarde jamais sous ton lit.",
-      "slide_text": "Ne regarde jamais sous ton lit."
+      "slide_text": "Ne regarde jamais sous ton lit.",
+      "scene": "bed_closing"
     }
   ]
 }

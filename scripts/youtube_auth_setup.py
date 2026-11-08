@@ -18,7 +18,7 @@ def main():
             f"Place le fichier client_secret.json (telecharge depuis Google Cloud Console) ici: {CLIENT_SECRET_PATH}"
         )
     flow = InstalledAppFlow.from_client_secrets_file(str(CLIENT_SECRET_PATH), SCOPES)
-    creds = flow.run_local_server(port=0)
+    creds = flow.run_local_server(port=0, open_browser=False)
 
     client_config = json.loads(CLIENT_SECRET_PATH.read_text(encoding="utf-8"))["installed"]
     TOKEN_PATH.parent.mkdir(parents=True, exist_ok=True)

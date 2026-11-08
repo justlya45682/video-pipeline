@@ -1,0 +1,48 @@
+{
+  "style": "horror",
+  "title": "Le placard qui grince... (histoire qui fait peur)",
+  "description": "Chaque nuit, le meme grincement. Le placard ne devrait pas s'ouvrir tout seul... Une histoire courte pour frissonner avant de dormir.\n\nAttention, cette video est destinee a un public averti (frissons et suspense).\n\n#abonnetoi #abonnez #claude #creppy #history #horreur #mystery #histoire #notfunny #abonnezvous #viral #video #titkok #Shorts",
+  "tags": ["abonnetoi", "abonnez", "claude", "creppy", "history", "horreur", "mystery", "histoire", "notfunny", "abonnezvous", "viral", "video", "titkok", "Shorts"],
+  "scenes": [
+    {
+      "narration": "Dans la chambre de Noah, il y avait un vieux placard. Et ce placard faisait toujours le meme bruit, chaque nuit, a minuit pile.",
+      "slide_text": "Chaque nuit, a minuit pile...",
+      "scene": "bedroom_dark"
+    },
+    {
+      "narration": "Un long grincement. Comme si quelque chose, de l'interieur, poussait doucement la porte.",
+      "slide_text": "Un long grincement...",
+      "scene": "window_wind"
+    },
+    {
+      "narration": "Noah avait pose une chaise devant le placard. Chaque soir. Pour etre sur qu'il reste ferme.",
+      "slide_text": "Une chaise devant la porte",
+      "scene": "listening"
+    },
+    {
+      "narration": "Mais cette nuit-la, la chaise etait tombee. Toute seule. Scratch... Scratch... contre le bois.",
+      "slide_text": "Scratch... Scratch... contre le bois.",
+      "scene": "scratches"
+    },
+    {
+      "narration": "Noah se leva, le coeur battant, et s'approcha du placard avec sa lampe de poche.",
+      "slide_text": "Il s'approche, lampe en main...",
+      "scene": "bending"
+    },
+    {
+      "narration": "La porte etait entrouverte. A l'interieur... rien. Juste des vetements, et le noir complet.",
+      "slide_text": "A l'interieur... rien.",
+      "scene": "void"
+    },
+    {
+      "narration": "Puis, tout au fond, dans le noir le plus profond, deux petites lueurs se sont allumees. Et elles le regardaient.",
+      "slide_text": "Deux lueurs le regardaient...",
+      "scene": "eyes"
+    },
+    {
+      "narration": "Depuis cette nuit, Noah dort avec la lumiere allumee. Et toi... as-tu verifie ton placard, ce soir ?",
+      "slide_text": "As-tu verifie ton placard, ce soir ?",
+      "scene": "bed_closing"
+    }
+  ]
+}

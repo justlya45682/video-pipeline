@@ -1,36 +1,43 @@
 {
   "style": "kids",
   "title": "Pourquoi le ciel est bleu ? | Science pour les enfants",
-  "description": "Une explication simple et amusante pour les enfants : pourquoi le ciel est-il bleu ? Decouvre la science derriere les couleurs du ciel avec des mots simples !\n\n#science #enfants #educatif #apprendre #curiosite",
-  "tags": ["science pour enfants", "pourquoi le ciel est bleu", "educatif enfant", "apprendre en s'amusant", "curiosite scientifique"],
+  "description": "Une explication simple et amusante pour les enfants : pourquoi le ciel est-il bleu ? Decouvre la science derriere les couleurs du ciel avec des mots simples !\n\n#Shorts #science #enfants #educatif #apprendre #curiosite",
+  "tags": ["Shorts", "science pour enfants", "pourquoi le ciel est bleu", "educatif enfant", "apprendre en s'amusant", "curiosite scientifique"],
   "scenes": [
     {
       "narration": "Salut les amis ! Aujourd'hui, on va decouvrir pourquoi le ciel est bleu. Es-tu pret pour cette aventure ?",
-      "slide_text": "Pourquoi le ciel est bleu ?"
+      "slide_text": "Pourquoi le ciel est bleu ?",
+      "scene": "sky_day"
     },
     {
       "narration": "Le soleil envoie sa lumiere vers la Terre. Cette lumiere a l'air blanche, mais en fait, elle contient toutes les couleurs de l'arc-en-ciel !",
-      "slide_text": "La lumiere du soleil contient toutes les couleurs !"
+      "slide_text": "La lumiere du soleil contient toutes les couleurs !",
+      "scene": "rainbow_sun"
     },
     {
       "narration": "Quand la lumiere traverse l'air, elle rencontre plein de toutes petites molecules invisibles.",
-      "slide_text": "L'air est plein de petites molecules"
+      "slide_text": "L'air est plein de petites molecules",
+      "scene": "molecules"
     },
     {
       "narration": "La couleur bleue est dispersee beaucoup plus que les autres couleurs, parce qu'elle voyage en toutes petites vagues.",
-      "slide_text": "Le bleu se disperse partout dans le ciel"
+      "slide_text": "Le bleu se disperse partout dans le ciel",
+      "scene": "scatter_blue"
     },
     {
       "narration": "C'est pour ca que, ou que tu regardes dans le ciel, tu vois du bleu tout autour de toi !",
-      "slide_text": "Le bleu est partout autour de nous !"
+      "slide_text": "Le bleu est partout autour de nous !",
+      "scene": "wide_sky"
     },
     {
       "narration": "Et le soir, quand le soleil se couche, le ciel devient orange et rose, parce que la lumiere traverse beaucoup plus d'air.",
-      "slide_text": "Le soir, le ciel devient orange et rose"
+      "slide_text": "Le soir, le ciel devient orange et rose",
+      "scene": "sunset"
     },
     {
       "narration": "Maintenant tu sais pourquoi le ciel est bleu ! Continue a poser des questions, la science est partout autour de toi.",
-      "slide_text": "Bravo, tu as compris !"
+      "slide_text": "Bravo, tu as compris !",
+      "scene": "celebration"
     }
   ]
 }

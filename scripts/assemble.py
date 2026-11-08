@@ -3,7 +3,7 @@ import subprocess
 import json
 from pathlib import Path
 
-WIDTH, HEIGHT = 1920, 1080
+WIDTH, HEIGHT = 1080, 1920
 FPS = 30
 
 
@@ -17,24 +17,17 @@ def get_audio_duration(path: str) -> float:
 
 
 def make_scene_clip(image_path: str, audio_path: str, output_path: str, padding: float = 0.6) -> float:
-    """Cree un clip video a partir d'une image (effet Ken Burns) + narration audio.
+    """Cree un clip video a partir d'une image fixe (sans effet de zoom) + narration audio.
     Retourne la duree du clip."""
     audio_dur = get_audio_duration(audio_path)
     duration = audio_dur + padding
-
-    zoom_frames = int(duration * FPS)
-    zoompan = (
-        f"scale=3840:2160,"
-        f"zoompan=z='min(zoom+0.0008,1.15)':d={zoom_frames}:s={WIDTH}x{HEIGHT}:fps={FPS}"
-    )
 
     cmd = [
         "ffmpeg", "-y",
         "-loop", "1", "-i", image_path,
         "-i", audio_path,
-        "-filter_complex", f"[0:v]{zoompan}[v]",
-        "-map", "[v]", "-map", "1:a",
         "-t", str(duration),
+        "-vf", f"scale={WIDTH}:{HEIGHT},fps={FPS}",
         "-c:v", "libx264", "-pix_fmt", "yuv420p",
         "-c:a", "aac", "-b:a", "160k",
         "-shortest",

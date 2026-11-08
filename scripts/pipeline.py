@@ -26,7 +26,7 @@ def run_pipeline(spec_path: str) -> dict:
         audio_path = str(work_dir / f"scene_{i:02d}.mp3")
         image_path = str(work_dir / f"scene_{i:02d}.jpg")
         synthesize(scene["narration"], style, audio_path)
-        make_slide(scene["slide_text"], style, image_path, i)
+        make_slide(scene["slide_text"], style, image_path, scene.get("scene", "auto"), i)
         scene_assets.append({"image": image_path, "audio": audio_path})
 
     video_path = str(work_dir / "final.mp4")

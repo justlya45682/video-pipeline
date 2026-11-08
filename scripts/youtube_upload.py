@@ -78,6 +78,7 @@ if __name__ == "__main__":
         title=sys.argv[2],
         description=sys.argv[3],
         tags=sys.argv[4].split(",") if len(sys.argv) > 4 else [],
-        publish_at_iso=sys.argv[5] if len(sys.argv) > 5 else None,
+        publish_at_iso=sys.argv[5] if len(sys.argv) > 5 and sys.argv[5] else None,
+        made_for_kids=(sys.argv[6].lower() == "true") if len(sys.argv) > 6 else False,
     )
     print(f"Video uploadee: https://youtube.com/watch?v={video_id}")
